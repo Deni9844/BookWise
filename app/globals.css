@@ -11,8 +11,8 @@
   --color-card-foreground: hsl(var(--card-foreground));
   --color-popover: hsl(var(--popover));
   --color-popover-foreground: hsl(var(--popover-foreground));
-  /* --color-primary: hsl(var(--primary));
-  --color-primary-foreground: hsl(var(--primary-foreground)); */
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
   --color-muted: hsl(var(--muted));
@@ -29,7 +29,7 @@
   --color-chart-3: hsl(var(--chart-3));
   --color-chart-4: hsl(var(--chart-4));
   --color-chart-5: hsl(var(--chart-5));
-  --color-primary: #E7C9A5;
+  --color-primary-slate: #E7C9A5;
   --color-primary-admin: #25388C;
   --color-green: #027A48;
   --color-green-100: #ECFDF3;
@@ -203,7 +203,7 @@
 
   /* Book List */
   .book-list {
-    @apply mt-10 flex flex-wrap gap-5 max-xs:justify-between xs:gap-10;
+    @apply mt-10 flex flex-wrap gap-5 max-xs:justify-around xs:gap-10;
   }
 
   /* Book Overview */
@@ -236,7 +236,7 @@
   }
 
   .book-overview_btn {
-    @apply !mt-4 !min-h-14 !w-fit !bg-primary !text-dark-100 hover:!bg-primary/90 max-md:!w-full
+    @apply !mt-4 !min-h-14 !w-fit !bg-primary-slate !text-dark-100 hover:!bg-primary-slate/90 max-md:!w-full
   }
 
   /* File Upload */
